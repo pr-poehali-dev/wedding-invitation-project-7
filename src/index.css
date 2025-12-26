@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,11 +15,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 43 75% 52%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 160 30% 25%;
+    --secondary-foreground: 0 0% 100%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
@@ -33,6 +35,10 @@
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --cream: 45 30% 95%;
+    --gold: 43 75% 52%;
+    --forest: 160 30% 20%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -96,6 +102,38 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
+}
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-sans {
+  font-family: "Open Sans", sans-serif;
+}
+
+.bg-cream {
+  background-color: hsl(var(--cream));
+}
+
+.text-gold {
+  color: hsl(var(--gold));
+}
+
+.bg-gold {
+  background-color: hsl(var(--gold));
+}
+
+.border-gold {
+  border-color: hsl(var(--gold));
+}
+
+.text-forest {
+  color: hsl(var(--forest));
+}
+
+.bg-forest {
+  background-color: hsl(var(--forest));
 }
