@@ -51,7 +51,7 @@ const Index = () => {
             </div>
             <div className="text-center py-8 bg-cream/30 rounded-lg">
               <p className="font-cormorant text-5xl text-forest mb-2">
-                Александр & Елизавета
+                Илья & Дарья
               </p>
               <p className="text-gold text-lg font-cormorant italic">
                 становятся мужем и женой
