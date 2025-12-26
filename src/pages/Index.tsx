@@ -34,12 +34,21 @@ const Index = () => {
               </h2>
             </div>
             
-            <div className="mb-8 rounded-lg overflow-hidden shadow-lg">
+            <div className="mb-8 relative rounded-lg overflow-hidden shadow-lg">
               <img 
                 src="https://cdn.poehali.dev/files/8DL-pCqgTr9W5CCzQFRVAZjlh51MTWeTcXRfpQhxS7LTdqWiQnl3nnSmu6v428HVHsG5LeK29IJBxypJn7sDzn_W.jpg" 
                 alt="Илья и Дарья"
                 className="w-full h-auto object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 text-center py-8 px-4">
+                <p className="font-cormorant text-5xl md:text-6xl text-white mb-2 drop-shadow-lg">
+                  Илья & Дарья
+                </p>
+                <p className="text-gold text-xl font-cormorant italic drop-shadow-lg">
+                  становятся мужем и женой
+                </p>
+              </div>
             </div>
             
             <p className="text-gray-700 leading-relaxed text-lg">
@@ -47,25 +56,6 @@ const Index = () => {
               и счастливых дней нашей жизни. Ваше присутствие на нашей свадьбе 
               будет для нас особенно дорогим и значимым.
             </p>
-          </div>
-
-          <Separator className="my-8 bg-gold/20" />
-
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Users" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Имена молодоженов
-              </h2>
-            </div>
-            <div className="text-center py-8 bg-cream/30 rounded-lg">
-              <p className="font-cormorant text-5xl text-forest mb-2">
-                Илья & Дарья
-              </p>
-              <p className="text-gold text-lg font-cormorant italic">
-                становятся мужем и женой
-              </p>
-            </div>
           </div>
 
           <Separator className="my-8 bg-gold/20" />
