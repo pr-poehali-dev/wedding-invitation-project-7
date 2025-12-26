@@ -27,12 +27,21 @@ const Index = () => {
           <Separator className="my-8 bg-gold/20" />
 
           <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-6">
               <Icon name="Sparkles" className="text-gold" size={24} />
               <h2 className="font-cormorant text-3xl text-forest font-semibold">
                 Дорогие гости!
               </h2>
             </div>
+            
+            <div className="mb-8 rounded-lg overflow-hidden shadow-lg">
+              <img 
+                src="https://cdn.poehali.dev/files/8DL-pCqgTr9W5CCzQFRVAZjlh51MTWeTcXRfpQhxS7LTdqWiQnl3nnSmu6v428HVHsG5LeK29IJBxypJn7sDzn_W.jpg" 
+                alt="Илья и Дарья"
+                className="w-full h-auto object-cover"
+              />
+            </div>
+            
             <p className="text-gray-700 leading-relaxed text-lg">
               Мы рады пригласить вас разделить с нами один из самых важных 
               и счастливых дней нашей жизни. Ваше присутствие на нашей свадьбе 
