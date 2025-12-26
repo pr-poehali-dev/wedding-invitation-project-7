@@ -4,214 +4,145 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-cream via-white to-cream py-12 px-4">
-      <div className="max-w-4xl mx-auto">
-        <Card className="bg-white shadow-2xl border-2 border-gold/20 overflow-hidden">
-          <div className="h-2 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+    <div className="min-h-screen bg-white py-16 px-4">
+      <div className="max-w-3xl mx-auto">
+        <Card className="bg-white shadow-sm border border-sage/10 overflow-hidden">
           
-          <div className="text-center py-12 px-8 animate-fade-in">
-            <div className="flex justify-center items-center gap-4 mb-6">
-              <div className="h-px w-16 bg-gold"></div>
-              <Icon name="Heart" className="text-gold" size={32} />
-              <div className="h-px w-16 bg-gold"></div>
-            </div>
-            
-            <h1 className="font-cormorant text-6xl md:text-7xl text-forest mb-4 font-bold">
+          <div className="text-center py-16 px-8 animate-fade-in">
+            <h1 className="font-sans text-5xl md:text-6xl text-dark-green mb-3 font-light tracking-wide">
               Приглашение
             </h1>
-            <p className="text-gold text-xl font-cormorant italic">
-              на торжество по случаю бракосочетания
+            <p className="text-sage text-base font-light tracking-widest uppercase">
+              на свадьбу
             </p>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
+          <Separator className="my-4 bg-sage/10" />
 
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Sparkles" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Дорогие гости!
-              </h2>
-            </div>
-            
-            <div className="mb-8 relative rounded-lg overflow-hidden shadow-lg">
+          <div className="px-8 md:px-16 py-12 animate-fade-in">            
+            <div className="mb-12 relative overflow-hidden">
               <img 
                 src="https://cdn.poehali.dev/files/8DL-pCqgTr9W5CCzQFRVAZjlh51MTWeTcXRfpQhxS7LTdqWiQnl3nnSmu6v428HVHsG5LeK29IJBxypJn7sDzn_W.jpg" 
                 alt="Илья и Дарья"
                 className="w-full h-auto object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-              <div className="absolute bottom-0 left-0 right-0 text-center py-8 px-4">
-                <p className="font-cormorant text-5xl md:text-6xl text-white mb-2 drop-shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-t from-dark-green/70 via-transparent to-transparent"></div>
+              <div className="absolute bottom-0 left-0 right-0 text-center py-10 px-4">
+                <p className="font-sans text-4xl md:text-5xl text-white mb-1 font-light tracking-wide">
                   Илья & Дарья
-                </p>
-                <p className="text-gold text-xl font-cormorant italic drop-shadow-lg">
-                  становятся мужем и женой
                 </p>
               </div>
             </div>
             
-            <p className="text-gray-700 leading-relaxed text-lg">
+            <p className="text-gray-600 leading-relaxed text-base font-light text-center max-w-xl mx-auto">
               Мы рады пригласить вас разделить с нами один из самых важных 
-              и счастливых дней нашей жизни. Ваше присутствие на нашей свадьбе 
-              будет для нас особенно дорогим и значимым.
+              и счастливых дней нашей жизни
             </p>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
+          <Separator className="my-4 bg-sage/10" />
 
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Calendar" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Дата и время
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-cream/30 p-6 rounded-lg text-center">
-                <Icon name="CalendarDays" className="text-gold mx-auto mb-3" size={32} />
-                <p className="text-2xl font-cormorant text-forest font-semibold mb-2">
-                  15 июля 2025 года
+          <div className="px-8 md:px-16 py-12 animate-fade-in">
+            <h2 className="font-sans text-2xl text-dark-green mb-8 font-light text-center tracking-wide">
+              Дата и время
+            </h2>
+            <div className="grid md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+              <div className="text-center py-8 border-t border-sage/20">
+                <p className="text-3xl font-light text-dark-green mb-2">
+                  15 июля 2025
                 </p>
-                <p className="text-gray-600">Суббота</p>
+                <p className="text-sm text-gray-500 uppercase tracking-widest">Суббота</p>
               </div>
-              <div className="bg-cream/30 p-6 rounded-lg text-center">
-                <Icon name="Clock" className="text-gold mx-auto mb-3" size={32} />
-                <p className="text-2xl font-cormorant text-forest font-semibold mb-2">
+              <div className="text-center py-8 border-t border-sage/20">
+                <p className="text-3xl font-light text-dark-green mb-2">
                   16:00
                 </p>
-                <p className="text-gray-600">Начало торжества</p>
+                <p className="text-sm text-gray-500 uppercase tracking-widest">Начало торжества</p>
               </div>
             </div>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
+          <Separator className="my-4 bg-sage/10" />
 
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="MapPin" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Место проведения
-              </h2>
-            </div>
-            <div className="bg-cream/30 p-8 rounded-lg">
-              <p className="text-2xl font-cormorant text-forest font-semibold mb-3">
+          <div className="px-8 md:px-16 py-12 animate-fade-in">
+            <h2 className="font-sans text-2xl text-dark-green mb-8 font-light text-center tracking-wide">
+              Место проведения
+            </h2>
+            <div className="text-center max-w-xl mx-auto space-y-3">
+              <p className="text-2xl font-light text-dark-green">
                 Ресторан "Усадьба"
               </p>
-              <p className="text-gray-700 mb-4 text-lg">
+              <p className="text-gray-600 font-light">
                 г. Москва, Ленинградский проспект, д. 25
               </p>
-              <div className="flex items-start gap-2 text-gray-600">
-                <Icon name="Info" className="text-gold mt-1 flex-shrink-0" size={20} />
-                <p>
-                  Просим вас прибыть на 15 минут раньше указанного времени
-                </p>
-              </div>
+              <p className="text-sm text-gray-500 pt-4">
+                Просим вас прибыть на 15 минут раньше
+              </p>
             </div>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
+          <Separator className="my-4 bg-sage/10" />
 
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Shirt" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Дресс-код
-              </h2>
-            </div>
-            <div className="bg-cream/30 p-8 rounded-lg">
-              <p className="text-xl font-cormorant text-forest font-semibold mb-4">
+          <div className="px-8 md:px-16 py-12 animate-fade-in">
+            <h2 className="font-sans text-2xl text-dark-green mb-8 font-light text-center tracking-wide">
+              Дресс-код
+            </h2>
+            <div className="text-center max-w-xl mx-auto space-y-6">
+              <p className="text-lg font-light text-dark-green">
                 Классический вечерний стиль
               </p>
-              <div className="grid md:grid-cols-2 gap-6 mt-6">
-                <div className="flex items-start gap-3">
-                  <div className="w-4 h-4 rounded-full bg-forest mt-1.5"></div>
-                  <div>
-                    <p className="font-semibold text-forest mb-1">Для мужчин:</p>
-                    <p className="text-gray-600">Костюм, смокинг или фрак с галстуком или бабочкой</p>
-                  </div>
+              <div className="grid md:grid-cols-2 gap-8 pt-6">
+                <div className="space-y-2">
+                  <p className="font-light text-dark-green text-sm uppercase tracking-widest">Для мужчин</p>
+                  <p className="text-gray-600 text-sm font-light">Костюм, смокинг или фрак</p>
                 </div>
-                <div className="flex items-start gap-3">
-                  <div className="w-4 h-4 rounded-full bg-gold mt-1.5"></div>
-                  <div>
-                    <p className="font-semibold text-forest mb-1">Для женщин:</p>
-                    <p className="text-gray-600">Вечернее платье или элегантный костюм</p>
-                  </div>
+                <div className="space-y-2">
+                  <p className="font-light text-dark-green text-sm uppercase tracking-widest">Для женщин</p>
+                  <p className="text-gray-600 text-sm font-light">Вечернее платье или костюм</p>
                 </div>
               </div>
-              <div className="mt-6 p-4 bg-white rounded border border-gold/20">
-                <p className="text-gray-700 italic flex items-start gap-2">
-                  <Icon name="Sparkles" className="text-gold mt-0.5 flex-shrink-0" size={18} />
-                  Рекомендуемые оттенки: изумрудный, золотой, шампань, бордовый
-                </p>
-              </div>
+              <p className="text-sage text-sm pt-4 font-light italic">
+                Рекомендуемые оттенки: изумрудный, бежевый, шампань
+              </p>
             </div>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
+          <Separator className="my-4 bg-sage/10" />
 
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="Gift" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                О подарках
-              </h2>
-            </div>
-            <div className="bg-cream/30 p-8 rounded-lg">
-              <p className="text-gray-700 leading-relaxed text-lg mb-4">
-                Ваше присутствие — уже лучший подарок для нас! Однако, если вы 
+          <div className="px-8 md:px-16 py-12 animate-fade-in">
+            <h2 className="font-sans text-2xl text-dark-green mb-8 font-light text-center tracking-wide">
+              О подарках
+            </h2>
+            <div className="text-center max-w-xl mx-auto">
+              <p className="text-gray-600 leading-relaxed font-light mb-4">
+                Ваше присутствие — уже лучший подарок для нас. Если вы 
                 хотите порадовать нас, мы будем благодарны за финансовую помощь 
                 в создании нашего семейного очага.
               </p>
-              <div className="flex items-start gap-2 text-gray-600 italic">
-                <Icon name="Heart" className="text-gold mt-1 flex-shrink-0" size={20} />
-                <p>
-                  На торжестве будет подготовлен специальный конверт для ваших пожеланий
+            </div>
+          </div>
+
+          <Separator className="my-4 bg-sage/10" />
+
+          <div className="px-8 md:px-16 py-12 animate-fade-in">
+            <div className="text-center max-w-xl mx-auto space-y-6">
+              <p className="text-gray-600 font-light text-sm">
+                Просим подтвердить ваше присутствие до 1 июля 2025 года
+              </p>
+              <div>
+                <p className="text-gray-500 text-sm mb-2 uppercase tracking-widest">
+                  Контакты
                 </p>
+                <p className="text-dark-green font-light text-lg">+7 (999) 123-45-67</p>
               </div>
             </div>
           </div>
 
-          <Separator className="my-8 bg-gold/20" />
-
-          <div className="px-8 md:px-16 py-8 animate-fade-in">
-            <div className="flex items-center gap-3 mb-6">
-              <Icon name="MessageCircle" className="text-gold" size={24} />
-              <h2 className="font-cormorant text-3xl text-forest font-semibold">
-                Важно
-              </h2>
-            </div>
-            <div className="space-y-4">
-              <div className="flex items-start gap-3 p-4 bg-cream/30 rounded-lg">
-                <Icon name="Check" className="text-gold mt-1 flex-shrink-0" size={20} />
-                <p className="text-gray-700">
-                  Просим подтвердить ваше присутствие до 1 июля 2025 года
-                </p>
-              </div>
-              <div className="flex items-start gap-3 p-4 bg-cream/30 rounded-lg">
-                <Icon name="Phone" className="text-gold mt-1 flex-shrink-0" size={20} />
-                <div>
-                  <p className="text-gray-700 mb-1">
-                    По всем вопросам обращайтесь:
-                  </p>
-                  <p className="text-forest font-semibold">+7 (999) 123-45-67</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center py-12 px-8 bg-gradient-to-b from-transparent to-cream/50">
-            <div className="flex justify-center items-center gap-4 mb-4">
-              <div className="h-px w-16 bg-gold"></div>
-              <Icon name="Heart" className="text-gold" size={28} />
-              <div className="h-px w-16 bg-gold"></div>
-            </div>
-            <p className="font-cormorant text-2xl text-forest italic">
-              С любовью и нетерпением ждём встречи с вами!
+          <div className="text-center py-16 px-8">
+            <p className="font-light text-xl text-sage italic">
+              С любовью ждём встречи с вами
             </p>
           </div>
-
-          <div className="h-2 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
         </Card>
       </div>
     </div>
